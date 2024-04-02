@@ -1,4 +1,5 @@
 import React, { Fragment } from "react";
+import { Suspense } from "react";
 import {  Header, Link,Nav } from "./SharedLayout.styled";
 import { Outlet } from "react-router-dom";
 import Container from "../containter/Container";
@@ -25,7 +26,11 @@ export default function SharedLayout(){
                 
             </Container>    
         </Header>
-        <Outlet/>
+
+        <Suspense fallback={<div>Loading...</div>}>
+        <Outlet />
+        </Suspense>
+        
         </Fragment>
         
     )

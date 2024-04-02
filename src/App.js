@@ -18,9 +18,7 @@ export default function App(){
                     <Route path="/info" element={<Info/>}/>
                     <Route path="/portfolio" element={<Portfolio/>}/>
                     <Route path="/contacts" element={<Contacts/>}/>
-
-                </Route>
-                
+                </Route>    
             </Routes>
         </Fragment>
     )
