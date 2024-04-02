@@ -1,0 +1,29 @@
+.contacts-list{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    max-width: 600px;
+    box-shadow: 6px 4px 53px -1px rgba(0,0,0,0.41);
+    padding: 50px;
+    text-align: center;
+    color: #323232;
+    font-size: 16px;
+}
+
+.contact-name{
+    font-weight: 600;
+}
+
+@media screen and (max-width: 1199px) {
+    .contacts-list{
+        margin-top: 40px;
+    }
+}
+
+@media screen and (min-width: 695px) {
+    .contacts-list{
+        font-size: 25px;
+    }
+}

@@ -1,0 +1,65 @@
+.hero{
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    
+
+    box-shadow: 6px 4px 53px -1px rgba(0,0,0,0.41);
+}
+
+.hero > *{
+    animation-name: heroOpacity;
+    animation-duration: 1000ms;
+    animation-timing-function: linear;
+
+}
+
+.hero__main-title{
+    font-size: 6vw;
+    text-transform: uppercase;
+    letter-spacing: 1vw;
+    color: rgba(0, 0, 0,0.6);
+
+}
+
+.hero p{
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: rgba(0, 0, 0,0.4);
+    margin-left: 4vw;
+    letter-spacing: 3px;
+}
+
+.hero p:last-child{
+    margin-left: 8vw;
+}
+
+@media screen and (max-width: 694px){
+    .hero{
+        text-align: center;
+    }
+
+    .hero p{
+        margin: 0;
+        font-size: 6px;
+    }
+}
+
+@keyframes heroOpacity{
+    0%{
+        opacity: 0;
+        transform: scale(0.6);
+    }
+
+    100%{
+        opacity:1;
+        transform: scale(1);
+    }
+}
+
+
+

@@ -1,0 +1,84 @@
+.social-list{
+    position: fixed;
+    bottom: 40px;
+    left: 40px;    
+}
+
+.social-list__item{
+    transition: all 250ms linear;
+}
+
+.social-list__item:hover,
+.social-list__item:focus{
+    transform: scale(1.1);
+}
+
+.social-list__link::before{
+    display: block;
+    content: "";
+    width: 30px;
+    height: 30px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    
+}
+
+.email::before{
+    background-image: url(../../img/icons/email.png);
+}
+
+.whatsap::before{
+    background-image: url(../../img/icons/whatsapp.png);
+}
+
+.github::before{
+    background-image: url(../../img/icons/github.png);
+}
+
+@media screen and (max-width: 1199px) {
+    .social-list{
+        position: static;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 30px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 40px;
+    }
+
+    .social-list__link::before{
+        height: 30px;
+        width: 30px;
+    }
+  }
+
+  @media screen and (min-width: 695px) {
+    .social-list__item:not(:last-child){
+        margin-bottom: 15px;
+    }
+  }
+
+  @media screen and (min-width: 1200px){
+    .social-list{
+        animation-name: myAnim;
+        animation-duration: 6000ms;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+    }
+  }
+
+
+  @keyframes myAnim {
+	0% {
+		transform: translateY(0);
+	}
+
+	50% {
+		transform: translateY(-20px);
+	}
+
+    100% {
+        transform: translateY(0);
+    }
+}

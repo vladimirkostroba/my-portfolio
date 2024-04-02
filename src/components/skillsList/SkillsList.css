@@ -1,0 +1,75 @@
+.skills-list__title{
+  text-align: center;
+  font-size: 30px;
+  margin: 40px;
+}
+
+.swiper-card h3::before{
+  display: block;
+  content: '';
+  width: 60px;
+  height: 60px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-bottom: 20px;
+}
+
+.html::before{
+  background-image: url(../../img/icons/html.png);
+}
+
+.react::before{
+  background-image: url(../../img/icons/react.png);
+}
+
+.javascript::before{
+  background-image: url(../../img/icons/javascript.png);
+}
+
+.instruments::before{
+  background-image: url(../../img/icons/system.png);
+}
+
+.swiper-card h3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.swiper-card p{
+  text-transform: capitalize;
+  font-weight: 600;
+}
+
+.swiper-card p:not(:last-child){
+  margin-bottom: 15px;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.swiper-slide img {
+  display: block;
+  width: 200px;
+  height: auto;
+  object-fit: cover;
+}
+
+.mySwiper{
+  box-shadow: 6px 4px 53px -1px rgba(0,0,0,0.41);
+  padding: 40px 0;
+}
+
