@@ -1,3 +1,4 @@
+import React, { Fragment } from "react";
 import { Route, Routes } from "react-router-dom";
 
 import SharedLayout from "./components/sharedLayout/SharedLayout";
@@ -9,15 +10,17 @@ import Info from "./pages/info/Info";
 // import examples from "./materials/examples"
 
 export default function App(){
-    return(        
+    return(
+        <Fragment>
+            <SharedLayout/>
             <Routes>
-            <Route path="/" element={<SharedLayout/>}>
-                <Route index element={<Home/>}/>
-            </Route>
             <Route index element={<Home/>}/>
             <Route path="/info" element={<Info/>}/>
             <Route path="/portfolio" element={<Portfolio/>}/>
+                
+            
             <Route path="/contacts" element={<Contacts/>}/>
             </Routes>
+        </Fragment>
     )
 }
