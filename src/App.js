@@ -33,7 +33,7 @@ export default function App(){
             </Header>
                 <Routes>
                 
-                    <Route path='/' element={<Home/>}/>
+                    <Route path="/" element={<Home/>}/>
                     <Route path="/info" element={<Info/>}/>
                     <Route path="/portfolio" element={<Portfolio/>}/>
                     <Route path="/contacts" element={<Contacts/>}/>
