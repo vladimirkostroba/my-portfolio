@@ -1,11 +1,12 @@
-import React from "react";
+import React, { Fragment } from "react";
 import {  Header, Link,Nav } from "./SharedLayout.styled";
 import { Outlet } from "react-router-dom";
 import Container from "../containter/Container";
 
 export default function SharedLayout(){
     return(
-        <Header>
+        <Fragment>
+            <Header>
             <Container>
                 <Nav>
                     <Link to="/"end>
@@ -21,8 +22,11 @@ export default function SharedLayout(){
                         Contacts
                     </Link>
                 </Nav>
-                <Outlet />
+                
             </Container>    
         </Header>
+        <Outlet/>
+        </Fragment>
+        
     )
 }

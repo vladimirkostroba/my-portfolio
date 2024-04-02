@@ -12,14 +12,15 @@ import Info from "./pages/info/Info";
 export default function App(){
     return(
         <Fragment>
-            <SharedLayout/>
-            <Routes>
-            <Route index element={<Home/>}/>
-            <Route path="/info" element={<Info/>}/>
-            <Route path="/portfolio" element={<Portfolio/>}/>
+                <Routes>
+                <Route path="/" element={<SharedLayout/>}>
+                    <Route index element={<Home/>}/>
+                    <Route path="/info" element={<Info/>}/>
+                    <Route path="/portfolio" element={<Portfolio/>}/>
+                    <Route path="/contacts" element={<Contacts/>}/>
+
+                </Route>
                 
-            
-            <Route path="/contacts" element={<Contacts/>}/>
             </Routes>
         </Fragment>
     )
