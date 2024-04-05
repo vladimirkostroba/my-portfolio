@@ -10,7 +10,7 @@ export default function Text(){
 <p className="aplication-text">bei der Suche nach einer Ausbildungsstelle im Internet bin ich auf die Internetpräsenz
 Ihres Unternehmens gestoßen. Ihr Portfolio und Ihre Unternehmensausrichtung
 entsprechen meinen Wünschen, sodass ich mich hiermit um einen Ausbildungsplatz
-als Webentwickler bei Ihnen bewerbe.</p>
+als Aunwendugsentwickler bei Ihnen bewerbe.</p>
 
 <p className="aplication-text">Ich lebe seit Juni 2022 mit meiner Frau und meinem Sohn in Deutschland. In dieser
 Zeit habe ich meinen Integrationskurs erfolgreich absolviert und das Sprachniveau B1
@@ -24,7 +24,7 @@ deutschen Arbeitsmarkt einzusteigen.</p>
 Abschlusszeugnis füge ich dieser Bewerbung bei.</p>
 
 <p className="aplication-text">Ich verfüge bereits über Kenntnisse in den notwendigen Technologien im Bereich
-Webentwicklung, wie zum Beispiel JavaScript, HTML5, CSS3, React.js. Aufgrund
+Aunwendugsentwicklung, wie zum Beispiel JavaScript, HTML5, CSS3, React.js. Aufgrund
 meiner bisherigen Qualifizierungen und Berufserfahrung im technischen Bereich
 verfüge ich über ein analytisches Denken. Zudem verfolge ich einen ganzheitlichen
 Ansatz zur Problemlösung und habe immer den Wunsch nach Weiterentwicklung. Des
